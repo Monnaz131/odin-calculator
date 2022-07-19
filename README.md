@@ -6,3 +6,4 @@ Practice HTML, CSS, JavaScript, and DOM manipulation skills by building a  nice-
 2. Use decimals.
 3. Clear existing operations.
 4. Use backspace to re-enter numbers or operators.
+5. Use mouse or keyboard to do operations.
