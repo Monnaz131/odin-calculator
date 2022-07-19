@@ -7,16 +7,21 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: #2B2A2A;
     color: white;
     margin: 0;
     padding: 10px;
+    height: 15vh;
 }
 
-section {
+#calculator {
     background-color: #450C0F;
-    margin: 20px;
-    padding: 10px;
+    height: 75vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 button {
@@ -24,8 +29,25 @@ button {
     margin: 5px;
     border: none;
     border-radius: 5px;
+    width: 10vw;
+    height: 10vh;
+    font-size: 40px;
 }
 
 button:hover {
     background-color: #9B343A;
+}
+
+.display {
+    height: 10vh;
+    width: 40vw;
+    background-color: white;
+    margin: 20px;
+}
+
+footer {
+    background-color: #2B2A2A;
+    color: white;
+    height: 6vh;
+    padding: 10px;
 }
