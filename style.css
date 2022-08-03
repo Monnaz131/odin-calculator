@@ -45,11 +45,14 @@ button:active {
     background-color: rgb(224, 3, 206);
 }
 
-.display {
+#display {
     height: 10vh;
     width: 40vw;
     background-color: white;
     margin: 20px;
+    padding: 10px;
+    font-size: 50px;
+    text-align: end;
 }
 
 footer {
