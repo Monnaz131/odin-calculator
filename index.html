@@ -6,45 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
 </head>
 <body>
     <header>
         <h1>Online Calculator</h1>
     </header>
     <section>
-        <div id="calculator">
-            <input id="display" type="text" value="0" />
-            <div id="buttons">
-                <div id="row-one">
-                    <button id="clear" class="operators">C</button>
-                    <button id="delete" class="operators">DEL</button>
-                    <button id="percentage" class="operators">%</button>
-                    <button id="add" class="operators">+</button>
+        <div class="calculator">
+            <div class="display">
+                <div class="previousNumber"></div>
+                <div class="currentNumber">0</div>
+            </div>
+            <div class="buttons">
+                <div class="row-one">
+                    <button class="clear">AC</button>
+                    <button class="delete">DEL</button>
+                    <button class="percentage">%</button>
+                    <button class="operators">+</button>
                 </div>
-                <div id="row-two">
-                    <button id="one" class="numbers">1</button>
-                    <button id="two" class="numbers">2</button>
-                    <button id="three" class="numbers">3</button>
-                    <button id="subtract" class="operators">-</button>
+                <div class="row-two">
+                    <button class="numbers">1</button>
+                    <button class="numbers">2</button>
+                    <button class="numbers">3</button>
+                    <button class="operators">-</button>
                 </div>
-                <div id="row-three">
-                    <button id="four" class="numbers">4</button>
-                    <button id="five" class="numbers">5</button>
-                    <button id="six" class="numbers">6</button>
-                    <button id="multiply" class="operators">*</button>
+                <div class="row-three">
+                    <button class="numbers">4</button>
+                    <button class="numbers">5</button>
+                    <button class="numbers">6</button>
+                    <button class="operators">*</button>
                 </div>
-                <div id="row-four">
-                    <button id="seven" class="numbers">7</button>
-                    <button id="eight" class="numbers">8</button>
-                    <button id="nine" class="numbers">9</button>
-                    <button id="divide" class="operators">/</button>
+                <div class="row-four">
+                    <button class="numbers">7</button>
+                    <button class="numbers">8</button>
+                    <button class="numbers">9</button>
+                    <button class="operators">/</button>
                 </div>
-                <div id="row-five">
-                    <button id="decimal" class="operators">.</button>
-                    <button id="zero" class="numbers">0</button>
-                    <button id="equal" class="operators">=</button>
-                    <button id="sign" class="operators">+/-</button>
+                <div class="row-five">
+                    <button class="decimal">.</button>
+                    <button class="numbers">0</button>
+                    <button class="equal">=</button>
+                    <button class="sign">+/-</button>
                 </div>
             </div>
         </div>
@@ -52,5 +54,7 @@
     <footer>
         <h3>Made by Monnaz &#129323</h3>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
