@@ -158,3 +158,34 @@ function handleDelete() {
     }
     
 }
+
+percentage.addEventListener("click", handlePercentage);
+
+function handlePercentage() {
+    previousNum = Number(previousNum);
+    currentNum = Number(currentNum);
+
+    if (operator === "+") {
+        previousNum = previousNum + (previousNum * (currentNum / 100));
+    } else if (operator === "-") {
+        previousNum = previousNum - (previousNum * (currentNum / 100));
+    } else if (operator === "*") {
+        previousNum = previousNum * (currentNum / 100);
+    } else if (operator === "/") {
+        if (currentNum <= 0) {
+            previousNum = "Error";
+            displayResults();
+            return;
+        }
+        previousNum = previousNum / (currentNum / 100);
+    }
+    previousNum = previousNum.toString();
+    displayResults();
+}
+
+sign.addEventListener("click", inputSign);
+
+function inputSign() {
+    currentNum *= -1;
+    currentDisplayNumber.textContent = currentNum;
+}
